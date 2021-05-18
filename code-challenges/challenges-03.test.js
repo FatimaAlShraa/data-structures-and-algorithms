@@ -4,11 +4,6 @@
 CHALLENGE 1 - Review
 
 Write a function called addTwo that takes in an array and adds two to every value using a for loop. Place the new value in a new array. Return the new array.
-describe('Testing challenge 1', () => {
-  test('It should add two to every value', () => {
-    expect(addTwo([1, 2, 4])).toStrictEqual([3, 4, 6]);
-  });
-});
 ------------------------------------------------------------------------------------------------ */
 
 const addTwo = (arr) => {
@@ -80,18 +75,6 @@ CHALLENGE 5
 Write a function named notInFirstArray that, given two arrays as input, uses filter to return an array of all the elements in the second array that are not included in the first array.
 
 For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
-describe('Testing challenge 5', () => {
-  const firstNums = [1, 2, 3];
-  const secondNums = [1, 2, 3, 4];
-
-  const firstStrings = ['Demi', 'Gregor', 'Hound'];
-  const secondStrings = ['Gary', 'Charlotte', 'Demi', 'Gregor', 'Hound'];
-
-  test('It should return an array that includes any elements not in the first array', () => {
-    expect(notInFirstArray(firstNums, secondNums)).toStrictEqual([4]);
-    expect(notInFirstArray(firstNums, secondNums).length).toStrictEqual(1);
-  });
-
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
